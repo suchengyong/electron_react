@@ -3,6 +3,7 @@ import './App.css';
 import {ipcRenderer} from 'electron' // 1.引入时需要改动webpack配置 修改Target配置 ，
 // 安装模块customize-cra react-app-rewired // 来修改react webpack配置
 //const {ipcRenderer} = window.require('electron'); // 2.第二中引入方式，不需要改动其他配置
+import './peer-puppet.js';
 
 function App() {
   const [remoteCode,setRemoteCode] = useState('');

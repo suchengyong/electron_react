@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #screen-video{
+            width: 100vw;
+            height: 100vh;
+            object-fit: fill;
+        }
+    </style>
 </head>
 <body>
-    <h1>控制端，渲染进程</h1>
+    <h1>控制端，渲染进程,桌面流的获取</h1>
+    <video id="screen-video"></video>
+    <script>
+        require('./app.js')
+    </script>
 </body>
 </html>
